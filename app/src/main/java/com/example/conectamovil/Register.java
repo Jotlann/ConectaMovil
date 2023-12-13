@@ -52,11 +52,12 @@ public class Register extends AppCompatActivity {
                 String email = txtEmailR.getText().toString();
                 String pass = txtPassR.getText().toString();
                 String passrc = txtPassRC.getText().toString();
+                String agree = txtAgreeR.getText().toString();
 
                 if (user.equals("") || name.equals("") || apellido.equals("") || email.equals("") || pass.equals("") || passrc.equals("")) {
                     Toast.makeText(Register.this, "Todos los campos deben ser rellenados", Toast.LENGTH_SHORT).show();
-                } else if (pass.length() >= 8) {
-                    if (pass.equals(passrc)) {
+                } else if (pass.length() >= 6) {
+                    if (pass.equals(agree)) {
 
                         Auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override

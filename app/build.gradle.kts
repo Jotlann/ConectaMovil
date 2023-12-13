@@ -34,11 +34,23 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
-    implementation("com.google.firebase:firebase-analytics")
 
-    implementation("com.google.firebase:firebase-database")
-    implementation("com.google.firebase:firebase-auth")
+    //Firebase Services
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    implementation("com.google.firebase:firebase-auth-ktx:22.3.0")
+    implementation("androidx.navigation:navigation-runtime-ktx:2.7.5")
+    implementation("com.firebaseui:firebase-ui-auth:7.2.0")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-database:20.3.0")
+    implementation("com.google.firebase:firebase-auth:22.3.0")
+
+    //MQTT Services
+    implementation("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
+    implementation("org.eclipse.paho:org.eclipse.paho.android.service:1.1.1")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation ("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

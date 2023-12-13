@@ -14,7 +14,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="#CCC5B9"
+        android:background="#CAD2C5"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,16 +23,16 @@
 
         <EditText
             android:id="@+id/txtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/txtPass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="410dp"
+            android:layout_height="60dp"
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword" />
@@ -45,17 +45,17 @@
             <Button
                 android:id="@+id/buttonSign"
                 android:layout_width="100dp"
-                android:layout_height="45dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
-                android:backgroundTint="#EB5E28"
+                android:backgroundTint="#2F3E46"
                 android:text="Registrarse" />
 
             <Button
                 android:id="@+id/buttonLogin"
                 android:layout_width="100dp"
-                android:layout_height="45dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
-                android:backgroundTint="#EB5E28"
+                android:backgroundTint="#2F3E46"
                 android:text="Acceder" />
         </LinearLayout>
     </LinearLayout>
