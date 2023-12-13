@@ -18,7 +18,7 @@ public class Login extends AppCompatActivity {
 
     private FirebaseAuth Auth;
     EditText txtEmail, txtPass;
-    Button buttonLogin, buttonSign;
+    Button buttonLogin, buttonSign, buttonListado, buttonChat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,8 @@ public class Login extends AppCompatActivity {
         txtPass = findViewById(R.id.txtPass);
         buttonLogin = findViewById(R.id.buttonLogin);
         buttonSign = findViewById(R.id.buttonSign);
+        buttonListado = findViewById(R.id.buttonListado);
+        buttonChat = findViewById(R.id.buttonChat);
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +61,22 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this, Register.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonListado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, Listado.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, Chat.class);
                 startActivity(intent);
             }
         });

@@ -58,5 +58,27 @@
                 android:backgroundTint="#2F3E46"
                 android:text="Acceder" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonListado"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2F3E46"
+                android:text="Listado" />
+
+            <Button
+                android:id="@+id/buttonChat"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2F3E46"
+                android:text="Chat" />
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
